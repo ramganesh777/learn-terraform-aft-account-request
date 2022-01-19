@@ -44,7 +44,7 @@ module "sandbox_account_02" {
     ManagedOrganizationalUnit = "Sandbox"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
-    SSOUserEmail     = "ramgcttest10@gmail.com
+    SSOUserEmail     = "ramgcttest10@gmail.com"
     SSOUserFirstName = "ram"
     SSOUserLastName  = "yash"
   }

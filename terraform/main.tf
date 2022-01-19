@@ -2,17 +2,25 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "ramgcttest9@gmail.com"
-    AccountName               = "sandbox-aft"
+    AccountEmail              = "ramgcttest10@gmail.com"
+    AccountName               = "sandboxnew"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "ramgcttest9@gmail.com"
+    SSOUserEmail              = "ramgcttest10@gmail.com"
     SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserLastName           = "New"
   }
 
+  
   account_tags = {
-    "Ramg learn" = "AFT"
-  }
+    "ABC:Owner"       = "ramgcttest10@gmail.com"
+    "ABC:Division"    = "ENT"
+    "ABC:Environment" = "Dev"
+    "ABC:CostCenter"  = "123456"
+    "ABC:Vended"      = "true"
+    "ABC:DivCode"     = "102"
+    "ABC:BUCode"      = "ABC003"
+    "ABC:Project"     = "123456"
+  }  
 
   change_management_parameters = {
     change_requested_by = "Ramganesh Palpandiraj"
